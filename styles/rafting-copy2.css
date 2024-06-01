@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header, footer {
+  background-color: #0066cc; /* Darker shade of blue for better contrast */
+  color: #ffffff; /* White text on dark blue background */
+  padding: 10px 0;
+  text-align: center;
+}
+
+header img, footer img {
+  vertical-align: middle;
+}
+
+header nav a, footer nav a {
+  color: #ffffff; /* Ensure links are white on dark blue background */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover, footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+}
+
+.company-info, .employee-profiles, .contact-form {
+  margin: 20px 0;
+}
+
+/* Form Styles */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.contact-form fieldset {
+  border: 1px solid #cccccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-form fieldset legend {
+  font-weight: bold;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #0066cc; /* Slightly darker blue for better contrast */
+  color: #ffffff; /* White text on blue button */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0066cc; /* Darker blue on hover for better contrast */
+}
+
+/* Map Styles */
+.google-map {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.google-map iframe {
+  width: 100%;
+  max-width: 600px; 
+  height: 300px; 
+  border: 0;
+}
+
+/* Employee Profiles */
+.employee-profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.employee-profiles .employee {
+  max-width: 200px;
+}
+
+.employee-profiles .employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employee-profiles .employee p {
+  margin-top: 10px;
+  color: #333333; /* Darker text for better contrast */
+}
+
+.employee-profiles .employee span {
+  font-weight: bold;
+}
+
+/* Social Links */
+.sociallinks a {
+  margin: 0 10px;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+}

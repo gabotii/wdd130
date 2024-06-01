@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+header, footer {
+  background-color: #0066cc; /* Darker shade of blue for better contrast */
+  color: #ffffff; /* White text on dark blue background */
+  padding: 10px 0;
+  text-align: center;
+}
+
+header img, footer img {
+  vertical-align: middle;
+}
+
+header nav a, footer nav a {
+  color: #ffffff; /* Ensure links are white on dark blue background */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover, footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Call to Action Styles */
+.call-to-action {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.call-to-action h2 {
+  font-size: 1.5rem;
+}
+
+.call-to-action p {
+  margin: 10px 0;
+}
+
+.call-to-action .cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066cc; /* Slightly darker blue for better contrast */
+  color: #ffffff; /* White text on blue button */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.call-to-action .cta-button:hover {
+  background-color: #0066cc; /* Darker blue on hover for better contrast */
+}
+
+/* Trip Descriptions Styles */
+.trip-descriptions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allow trips to wrap to next line if space is limited */
+  margin: 20px 0;
+}
+
+.trip {
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #cccccc; /* Add border at bottom of image */
+}
+
+.trip-info {
+  padding: 10px;
+}
+
+.trip-info h3 {
+  margin-top: 0;
+}
+
+/* Trips Table Styles */
+.trips-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc; /* Add border bottom for each row */
+  text-align: left;
+}
+
+th {
+  background-color: #0066cc; /* Dark blue for header */
+  color: #ffffff; /* White text on dark blue */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row background color for better readability */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0066cc; /* Darker shade of blue for better contrast */
+  color: #ffffff; /* White text on dark blue background */
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p a {
+  color: #ffffff; /* Ensure link is white */
+  text-decoration: underline; /* Underline link to make it clear */
+}
+
+.sociallinks a {
+  margin: 0 10px;
+}
+
+.sociallinks img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .trip {
+    max-width: 100%;
+  }
+
+  .trips-table {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+  }
+
+  table {
+    min-width: 300px; /* Ensure table is scrollable on small screens */
+  }
+}
